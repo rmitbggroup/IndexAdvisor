@@ -1,0 +1,102 @@
+(lp0
+Vselect sum(l_extendedprice) from lineitem where l_linestatus='F' or l_commitdate<'1993-09-24';
+p1
+aVselect sum(l_extendedprice) from lineitem where l_shipdate='1993-09-24' and l_orderkey=100 and l_linestatus='F' or l_suppkey=10 and l_commitdate='1993-09-24';
+p2
+aVselect sum(l_extendedprice) from lineitem where (l_discount<1 or l_partkey=1000) and (l_shipdate='1993-09-24' or l_receiptdate='1993-09-24');
+p3
+aVselect sum(l_extendedprice) from lineitem where (l_receiptdate='1993-09-24' or l_shipdate='1993-09-24') and (l_orderkey<100 or l_quantity=50);
+p4
+aVselect sum(l_extendedprice) from lineitem where l_discount=1 or l_commitdate<'1993-09-24' or l_orderkey<100;
+p5
+aVselect sum(l_extendedprice) from lineitem where (l_shipdate='1993-09-24' or l_suppkey<10) and (l_shipmode='AIR' or l_returnflag='N');
+p6
+aVselect sum(l_extendedprice) from lineitem where l_partkey=1000 and l_discount=1 and l_receiptdate='1993-09-24' or l_shipdate='1993-09-24' and l_orderkey<100;
+p7
+aVselect sum(l_extendedprice) from lineitem where (l_shipdate<'1993-09-24' or l_orderkey=100) and (l_receiptdate='1993-09-24' or l_returnflag='N');
+p8
+aVselect sum(l_extendedprice) from lineitem where (l_suppkey=10 or l_shipdate='1993-09-24') and (l_quantity=50 or l_orderkey=100);
+p9
+aVselect sum(l_extendedprice) from lineitem where l_receiptdate<'1993-09-24' and l_orderkey=100 and l_suppkey=10 or l_commitdate<'1993-09-24' and l_shipdate<'1993-09-24';
+p10
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_partkey=1000 or l_partkey=1000;
+p11
+aVselect sum(l_extendedprice) from lineitem where l_suppkey=10 or l_orderkey=100;
+p12
+aVselect sum(l_extendedprice) from lineitem where l_receiptdate='1993-09-24' or l_orderkey=100;
+p13
+aVselect sum(l_extendedprice) from lineitem where (l_orderkey=100 or l_partkey<1000) and (l_suppkey=10 or l_receiptdate<'1993-09-24');
+p14
+aVselect sum(l_extendedprice) from lineitem where (l_receiptdate='1993-09-24' or l_orderkey=100) and (l_partkey<1000 or l_shipdate<'1993-09-24');
+p15
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_suppkey=10;
+p16
+aVselect sum(l_extendedprice) from lineitem where l_shipdate='1993-09-24' and l_suppkey=10 and l_orderkey<100 or l_commitdate='1993-09-24' and l_partkey=1000;
+p17
+aVselect sum(l_extendedprice) from lineitem where (l_orderkey=100 or l_partkey<1000) and (l_shipdate='1993-09-24' or l_receiptdate='1993-09-24');
+p18
+aVselect sum(l_extendedprice) from lineitem where l_linestatus='F' or l_orderkey=100 or l_suppkey<10;
+p19
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_quantity=50 or l_quantity=50;
+p20
+aVselect sum(l_extendedprice) from lineitem where (l_partkey=1000 or l_suppkey=10) and (l_shipdate='1993-09-24' or l_orderkey=100);
+p21
+aVselect sum(l_extendedprice) from lineitem where l_partkey<1000 or l_orderkey=100 or l_orderkey=100;
+p22
+aVselect sum(l_extendedprice) from lineitem where l_orderkey<100 or l_partkey=1000;
+p23
+aVselect sum(l_extendedprice) from lineitem where l_partkey=1000 or l_suppkey<10 or l_partkey=1000;
+p24
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_returnflag='N' or l_commitdate='1993-09-24';
+p25
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_partkey=1000;
+p26
+aVselect sum(l_extendedprice) from lineitem where l_partkey<1000 and l_suppkey=10 and l_returnflag='N' or l_orderkey=100 and l_shipdate='1993-09-24';
+p27
+aVselect sum(l_extendedprice) from lineitem where l_returnflag='N' or l_receiptdate='1993-09-24' or l_quantity=50;
+p28
+aVselect sum(l_extendedprice) from lineitem where l_orderkey<100 or l_partkey=1000;
+p29
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_partkey<1000 or l_orderkey=100;
+p30
+aVselect sum(l_extendedprice) from lineitem where l_shipdate='1993-09-24' or l_orderkey<100;
+p31
+aVselect sum(l_extendedprice) from lineitem where (l_shipdate<'1993-09-24' or l_orderkey=100) and (l_quantity<50 or l_partkey=1000);
+p32
+aVselect sum(l_extendedprice) from lineitem where l_shipmode='AIR' or l_orderkey=100;
+p33
+aVselect sum(l_extendedprice) from lineitem where l_commitdate='1993-09-24' or l_receiptdate='1993-09-24';
+p34
+aVselect sum(l_extendedprice) from lineitem where l_partkey<1000 and l_returnflag='N' and l_orderkey=100 or l_quantity=50 and l_commitdate='1993-09-24';
+p35
+aVselect sum(l_extendedprice) from lineitem where l_partkey<1000 or l_orderkey=100 or l_orderkey=100;
+p36
+aVselect sum(l_extendedprice) from lineitem where (l_orderkey<100 or l_discount=1) and (l_partkey=1000 or l_suppkey<10);
+p37
+aVselect sum(l_extendedprice) from lineitem where l_shipdate='1993-09-24' or l_commitdate='1993-09-24' or l_shipdate<'1993-09-24';
+p38
+aVselect sum(l_extendedprice) from lineitem where l_receiptdate='1993-09-24' or l_orderkey=100;
+p39
+aVselect sum(l_extendedprice) from lineitem where (l_commitdate='1993-09-24' or l_receiptdate='1993-09-24') and (l_returnflag='N' or l_partkey=1000);
+p40
+aVselect sum(l_extendedprice) from lineitem where l_orderkey=100 or l_shipdate='1993-09-24';
+p41
+aVselect sum(l_extendedprice) from lineitem where l_suppkey=10 and l_orderkey=100 and l_partkey=1000 or l_discount=1 and l_shipdate='1993-09-24';
+p42
+aVselect sum(l_extendedprice) from lineitem where (l_receiptdate='1993-09-24' or l_shipmode='AIR') and (l_shipdate='1993-09-24' or l_suppkey=10);
+p43
+aVselect sum(l_extendedprice) from lineitem where l_suppkey=10 or l_shipdate='1993-09-24';
+p44
+aVselect sum(l_extendedprice) from lineitem where (l_partkey=1000 or l_shipmode='AIR') and (l_suppkey=10 or l_returnflag='N');
+p45
+aVselect sum(l_extendedprice) from lineitem where l_quantity=50 or l_commitdate<'1993-09-24' or l_quantity=50;
+p46
+aVselect sum(l_extendedprice) from lineitem where (l_commitdate='1993-09-24' or l_orderkey=100) and (l_shipdate='1993-09-24' or l_partkey=1000);
+p47
+aVselect sum(l_extendedprice) from lineitem where l_suppkey=10 or l_shipdate='1993-09-24' or l_receiptdate='1993-09-24';
+p48
+aVselect sum(l_extendedprice) from lineitem where l_suppkey=10 or l_returnflag='N';
+p49
+aVselect sum(l_extendedprice) from lineitem where l_shipdate<'1993-09-24' or l_orderkey=100;
+p50
+a.
